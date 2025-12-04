@@ -1,0 +1,188 @@
+{
+  "102834_EX2": {
+    "model": "blocks",
+    "fluid": {
+      "mu_cp": 0.6,
+      "ct_invpsi": 8e-06,
+      "h_ft": 40.0,
+      "p_res": 4000
+    },
+    "nW": 1,
+    "spacing": 400.0,
+    "blocks": [
+      {
+        "Lx_ft": 100.0,
+        "k_md": 10.0,
+        "omega": 1.0,
+        "Lambda": 1000.0
+      },
+      {
+        "Lx_ft": 0.1,
+        "k_md": 5000.0,
+        "omega": 1.0,
+        "Lambda": 1000.0
+      },
+      {
+        "Lx_ft": 300.0,
+        "k_md": 10.0,
+        "omega": 1.0,
+        "Lambda": 1000.0
+      }
+    ],
+    "schedules": [
+      {
+        "t": [
+          0,
+          1,
+          10,
+          100
+        ],
+        "q": [
+          200,
+          200,
+          100,
+          0
+        ]
+      }
+    ]
+  },
+  "102834_EX3": {
+    "model": "blocks",
+    "fluid": {
+      "mu_cp": 0.6,
+      "ct_invpsi": 8e-06,
+      "h_ft": 40.0,
+      "p_res": 4000
+    },
+    "nW": 1,
+    "spacing": 450.0,
+    "blocks": [
+      {
+        "Lx_ft": 250.0,
+        "k_md": 10.0,
+        "omega": 1.0,
+        "Lambda": 1000.0
+      },
+      {
+        "Lx_ft": 200.0,
+        "k_md": 500.0,
+        "omega": 0.01,
+        "Lambda": 1000.0
+      }
+    ],
+    "schedules": [
+      {
+        "t": [
+          0,
+          1,
+          10,
+          100
+        ],
+        "q": [
+          200,
+          200,
+          100,
+          0
+        ]
+      }
+    ]
+  },
+  "125043_EXA": {
+    "model": "trilinear",
+    "fluid": {
+      "mu_cp": 0.6,
+      "ct_invpsi": 8e-06,
+      "h_ft": 40.0,
+      "p_res": 4000
+    },
+    "nW": 2,
+    "spacing": 450.0,
+    "trilinear": {
+      "k_SRV_md": 500.0,
+      "Lx_SRV_ft": 100.0,
+      "k_ORV_md": 10.0,
+      "Lx_ORV_end_ft": 2000.0,
+      "omega_I": 1.0,
+      "Lambda_I": 1000.0,
+      "omega_O": 1.0,
+      "Lambda_O": 1000.0
+    },
+    "schedules": [
+      {
+        "t": [
+          0,
+          1,
+          10,
+          100
+        ],
+        "q": [
+          200,
+          200,
+          100,
+          0
+        ]
+      },
+      {
+        "t": [
+          0
+        ],
+        "q": [
+          0
+        ]
+      }
+    ]
+  },
+  "125043_EXB": {
+    "model": "trilinear",
+    "fluid": {
+      "mu_cp": 0.6,
+      "ct_invpsi": 8e-06,
+      "h_ft": 40.0,
+      "p_res": 4000
+    },
+    "nW": 3,
+    "spacing": 600.0,
+    "trilinear": {
+      "k_SRV_md": 800.0,
+      "Lx_SRV_ft": 120.0,
+      "k_ORV_md": 20.0,
+      "Lx_ORV_end_ft": 500.0,
+      "omega_I": 0.8,
+      "Lambda_I": 800.0,
+      "omega_O": 1.0,
+      "Lambda_O": 1000.0
+    },
+    "schedules": [
+      {
+        "t": [
+          0,
+          1,
+          10,
+          100
+        ],
+        "q": [
+          300,
+          300,
+          150,
+          0
+        ]
+      },
+      {
+        "t": [
+          0
+        ],
+        "q": [
+          0
+        ]
+      },
+      {
+        "t": [
+          0
+        ],
+        "q": [
+          0
+        ]
+      }
+    ]
+  }
+}
